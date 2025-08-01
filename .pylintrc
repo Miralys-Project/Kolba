@@ -1,0 +1,32 @@
+[MASTER]
+ignore=tests,.venv,__pycache__,scripts
+ignore-patterns=test_.*\.py
+jobs=1
+persistent=yes
+
+[MESSAGES CONTROL]
+disable=
+    C0114,  ; missing-module-docstring
+    C0115,  ; missing-class-docstring
+    C0116,  ; missing-function-docstring
+    R0903,  ; too-few-public-methods
+    C0103,
+
+[FORMAT]
+max-line-length=100
+indent-string='    '
+
+[REPORTS]
+output-format=colorized
+reports=no
+score=yes
+
+[TYPECHECK]
+ignore-mixin-members=yes
+
+[DESIGN]
+max-args=5
+max-locals=15
+max-returns=6
+max-branches=12
+max-statements=50

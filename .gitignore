@@ -137,3 +137,14 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+.turbo
+
+pyvenv.cfg 
+Include
+Lib 
+scripts/*.exe
+scripts/*.fish
+scripts/*.bat
+scripts/*.ps1
+activate

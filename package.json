@@ -35,7 +35,7 @@
     "prepare": "pnpm dlx husky",
     "build": "turbo run build",
     "test": "turbo run test",
-    "lint": "turbo run lint",
+    "lint": "pnpm eslint --fix && poetry run pylint src",
     "format": "turbo run format",
     "typecheck": "turbo run typecheck",
     "release": "turbo run release"
@@ -71,5 +71,6 @@
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.38.0",
     "vitest": "^3.2.4"
-  }
+  },
+  "packageManager": "pnpm@10.14.0"
 }

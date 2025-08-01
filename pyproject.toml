@@ -1,0 +1,32 @@
+[project]
+name = "kolba"
+version = "0.0.0"
+description = "Kolba is a programming language, mainly maintained by Miralys, which allow you to convert Cobol into TypeScript, Javascript, Python, C#, Rust or Kotlin."
+authors = [
+    {name = "Miralys-Project"}
+]
+license = {text = "Apache-2.0"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.3.7"
+
+[tool.poetry.scripts]
+lint = "pylint:run_pylint"
+
+[tool.poetry]
+name = "kolba"
+version = "0.0.0"
+description = "Kolba is a programming language, mainly maintained by Miralys, which allow you to convert Cobol into TypeScript, Javascript, Python, C#, Rust or Kotlin."
+authors = ["Miralys-Project"]
+
+package-mode = false

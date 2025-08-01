@@ -4,5 +4,6 @@
 	"{src/**,__tests__/**}.{mjs,js,cjs,ts,tsx,jsx}": [
 		"pnpm eslint --config ./.eslintrc.js --fix",
 		"pnpm prettier --write"
-	]
+	],
+	"*.py": ["poetry run pylint ."]
 }

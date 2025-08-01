@@ -16,7 +16,13 @@
 		},
 		"lint": {
 			"outputs": [],
-			"inputs": [".eslintrc.*", "src/**", "!dist/**"]
+			"inputs": [
+				".eslintrc.*",
+				".pylintrc",
+				"pyproject.toml",
+				"src/**",
+				"!dist/**"
+			]
 		},
 		"format": {
 			"outputs": [],
@@ -44,6 +50,7 @@
 		".eslintignore",
 		".prettierignore",
 		"package.json",
-		"pnpm-lock.yaml"
+		"pnpm-lock.yaml",
+		".pylintrc"
 	]
 }

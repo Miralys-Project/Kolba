@@ -11,6 +11,7 @@ packages:
     - packages/patches
     - apps/*
     - tests/*
+    - scripts/*
 
 ignoredBuiltDependencies:
     - esbuild
