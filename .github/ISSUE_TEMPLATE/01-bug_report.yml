@@ -1,0 +1,61 @@
+name: 🐛 Bug Report
+description: Report a bug in the language, CLI, or backends.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please provide as much detail as possible to help us reproduce and fix the issue.
+
+  - type: input
+    id: title
+    attributes:
+      label: Bug title
+      description: A short and descriptive title for the issue.
+      placeholder: "Example: Compilation fails with nested PERFORM loops"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe what you expected to happen, what actually happened, and why it's a problem.
+      placeholder: |
+        - What I tried to do...
+        - What actually happened...
+        - Why this is an issue...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide clear steps or a code snippet to reproduce the bug.
+      placeholder: |
+        1. Source code used
+        2. Command run
+        3. Actual output
+        4. Expected output
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: CLI / Language version
+      placeholder: "Example: v0.3.1"
+
+  - type: input
+    id: environment
+    attributes:
+      label: System / environment
+      placeholder: "Example: macOS 14, Node v20.10, Rust 1.76"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs, errors, or screenshots
+      description: Paste any error messages, logs, or screenshots that help illustrate the problem.
+      render: shell

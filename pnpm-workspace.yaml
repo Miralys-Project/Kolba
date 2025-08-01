@@ -1,0 +1,17 @@
+packages:
+    - packages/cli
+    - packages/core
+    - packages/converter
+    - packages/parser
+    - packages/rust
+    - packages/js-ts
+    - packages/python
+    - packages/csharp
+    - packages/kotlin
+    - packages/patches
+    - apps/*
+    - tests/*
+
+ignoredBuiltDependencies:
+    - esbuild
+    - unrs-resolver

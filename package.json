@@ -1,0 +1,74 @@
+{
+  "name": "@kolba/kolba",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Kolba is a programming language, mainly maintained by Miralys, which allow you to convert Cobol into TypeScript, Javascript, Python, C#, Rust or Kotlin.",
+  "keywords": [
+    "cobol",
+    "compiler",
+    "transpiler",
+    "javascript",
+    "typescript",
+    "rust",
+    "python",
+    "C#",
+    "kotlin",
+    "IBM",
+    "bank",
+    "new-tech",
+    "miralys",
+    "miralys-project"
+  ],
+  "homepage": "https://github.com/Miralys-Project/Kolba#readme",
+  "bugs": {
+    "url": "https://github.com/Miralys-Project/Kolba/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miralys-Project/Kolba.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Miralys-Project",
+  "type": "module",
+  "main": ".",
+  "scripts": {
+    "prepare": "pnpm dlx husky",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "typecheck": "turbo run typecheck",
+    "release": "turbo run release"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "contributors": [
+    "Miralys-Project <contact@miralys.xyz>",
+    "Tristan-GPT <tristangpt@miralys.xyz>",
+    "Etoile de feu <etoiledefeu@miralys.xyz>"
+  ],
+  "maintainers": [
+    "Miralys-Project <contact@miralys.xyz>",
+    "Tristan-GPT <tristangpt@miralys.xyz>",
+    "Etoile de feu <etoiledefeu@miralys.xyz>"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-angular": "^19.8.1",
+    "@eslint/js": "^9.32.0",
+    "@types/node": "^24.1.0",
+    "@vitest/coverage-c8": "^0.33.0",
+    "conventional-changelog-cli": "^5.0.0",
+    "eslint": "^9.32.0",
+    "eslint-config-neon": "^0.2.7",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.6.2",
+    "turbo": "^2.5.5",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.38.0",
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,42 @@
+name: ✨ Feature Request
+description: Suggest a new feature or improvement.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature or enhancement! Please describe the motivation and use case clearly to help us evaluate it.
+
+  - type: input
+    id: title
+    attributes:
+      label: Feature title
+      description: A short and clear name for your feature.
+      placeholder: "Example: Add support for inline IF statements"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature description
+      description: Describe the feature you'd like to see and how it would work.
+      placeholder: |
+        - What should happen?
+        - Any example syntax or CLI usage?
+        - Is this similar to something in other languages?
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation / Use case
+      description: Explain why this feature would be useful, and in what context it would be used.
+      placeholder: |
+        - Who needs this feature?
+        - What problem does it solve?
+        - How does it improve the user experience?
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Have you thought of other ways to solve this problem?
+      placeholder: "Example: Using macros instead of a new syntax, or working around with current features."
